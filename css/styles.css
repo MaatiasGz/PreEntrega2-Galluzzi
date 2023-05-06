@@ -75,6 +75,10 @@ footer{
 .icono-redes{
     width: 60px;
 }
+
+.menu li a:hover{
+    color: white;
+}
 /*Fin de estilos generales*/
 
 /*Estilos Index*/
@@ -117,7 +121,7 @@ footer{
 
 /*Estilos Servicios*/
 
-.servicio{
+.padre-servicio{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,26 +129,26 @@ footer{
     padding: 30px 20px;
 }
 @media (min-width:768px){
-  .servicio{
+  .padre-servicio{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
   }
 }
 @media (min-width:375px){
-    .servicio{
+    .padre-servicio{
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       width: 100%;
     }
   }
 @media (min-width:1024px){
-    .servicio{
+    .padre-servicio{
         grid-template-columns: repeat(3, 1fr);
         width: 100%;
     }
 }
-.card{
+.servicio{
     height: 750px;
 }
 /*Fin de estilos Servicios*/
@@ -159,34 +163,7 @@ footer{
     
 }
 
-.nosotros-padre {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
 
-.nosotros {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    gap:20px;
-}
-
-.nosotros img {
-    width: 480px;
-}
-
-.nosotros-texto {
-    width: 50%;
-}
-
-.reverso {
-    flex-direction: row-reverse;
-}
-
-.reverso .nosotros-texto{
-    text-align: right;
-}
 
 /*Fin de estilos Nosotros*/
 
